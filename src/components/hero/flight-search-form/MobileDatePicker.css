@@ -1,0 +1,39 @@
+.full-screen-datepicker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sticky-input {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1001;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .scrollable-calendar {
+    overflow-y: scroll;
+    height: calc(100vh - 48px); /* 48px is the height of the input field */
+  }
+  
+  .month-container {
+    /* padding: 10px 20px; */
+  }
+  
+  .selected-start-date,
+  .selected-end-date,
+  .selected-range-date {
+    background-color: #007bff !important;
+    color: white !important;
+  }
+  .font-bold {
+    font-weight: 900;
+    color: rgb(0, 68, 153);
+}
